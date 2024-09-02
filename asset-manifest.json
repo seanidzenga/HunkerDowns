@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/HunkerDowns/static/css/main.f855e6bc.css",
-    "main.js": "/HunkerDowns/static/js/main.22ea976a.js",
+    "main.css": "/HunkerDowns/static/css/main.4c11b484.css",
+    "main.js": "/HunkerDowns/static/js/main.8ec498b0.js",
     "static/js/453.beb0b6b7.chunk.js": "/HunkerDowns/static/js/453.beb0b6b7.chunk.js",
-    "static/media/logo.svg": "/HunkerDowns/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/section-5-background.png": "/HunkerDowns/static/media/section-5-background.816ff0d7a765bee3ed71.png",
+    "static/media/synescapecard.png": "/HunkerDowns/static/media/synescapecard.f1a6e4ce519dbd6f75ce.png",
+    "static/media/bg-entrance.png": "/HunkerDowns/static/media/bg-entrance.24342c8b42dc28f0d6c2.png",
+    "static/media/flaculacard.png": "/HunkerDowns/static/media/flaculacard.baebd4b625254aecca75.png",
+    "static/media/dreamcard.png": "/HunkerDowns/static/media/dreamcard.8acad4da93578ef91887.png",
+    "static/media/section-2-background.png": "/HunkerDowns/static/media/section-2-background.f6f2f41b17d4753a7b0c.png",
+    "static/media/section-3-background.png": "/HunkerDowns/static/media/section-3-background.63e6c65d2711ad1e59bf.png",
+    "static/media/section-1-background.png": "/HunkerDowns/static/media/section-1-background.f31667688f2ae0ed1ccf.png",
     "index.html": "/HunkerDowns/index.html",
-    "main.f855e6bc.css.map": "/HunkerDowns/static/css/main.f855e6bc.css.map",
-    "main.22ea976a.js.map": "/HunkerDowns/static/js/main.22ea976a.js.map",
+    "main.4c11b484.css.map": "/HunkerDowns/static/css/main.4c11b484.css.map",
+    "main.8ec498b0.js.map": "/HunkerDowns/static/js/main.8ec498b0.js.map",
     "453.beb0b6b7.chunk.js.map": "/HunkerDowns/static/js/453.beb0b6b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.22ea976a.js"
+    "static/css/main.4c11b484.css",
+    "static/js/main.8ec498b0.js"
   ]
 }
