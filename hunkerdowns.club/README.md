@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# www.hunkerdowns.club
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses [gh-pages](https://github.com/tschaub/gh-pages) to host the site on github pages.
+
+The purpose of this site is to give an overview of *what, and where* Hunker Downs is and a description of the main event that occurs there: **SubFrequencies**
+
+## Quick start
+
+Clone the repository and run `npm install` to install the dependencies, then use `npm start` to run the app locally.
+
+Commit source code changes to `main` or a feature branch prefixed with your username e.g. `seanidzenga/center-a-div`.
+
+Use `npm run deploy` to publish a new version of the app, this will create a new commit on the `gh-pages` branch which is what GitHub pages serves from.
+
+### CNAME File
+
+GitHub pages requires a **CNAME** file in order to work, and the file needs to be served publicly. Normally it's fine to keep it at the root of your project (in fact GitHub will automatically do that for you when you set a custom domain) but `gh-pages` won't serve that file correctly this way.
+
+Instead the **CNAME** file should be placed in `/public` so that when `gh-pages` works its magic it'll serve the `CNAME` file correctly.
 
 ## Available Scripts
 
@@ -29,42 +45,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `npm run deploy`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Builds the app for production on GitHub pages and deploys it by committing changes to the `gh-pages` branch.
