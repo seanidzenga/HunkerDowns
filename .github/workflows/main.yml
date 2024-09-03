@@ -16,6 +16,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: set git email
+        run: git config --global user.email "sean.idzenga@protonmail.com"
+      - name: set git name
+        run: git config --global user.name "Sean Idzenga"
       - name: install node modules
         run: npm install
       - name: Deploy the static website to gh-pages
