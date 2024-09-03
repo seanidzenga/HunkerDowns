@@ -15,16 +15,16 @@ jobs:
         working-directory: ./hunkerdowns.club
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: $GH_ACCESS_TOKEN
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: set git url with access token
-        run: git config --global url.https://$GH_ACCESS_TOKEN@github.com/.insteadOf https://github.com/
       - name: set git email
         run: git config --global user.email "sean.idzenga@protonmail.com"
       - name: set git name
         run: git config --global user.name "Sean Idzenga"
       - name: install node modules
-        run: npm install
+        run: npm install --no-audit
       - name: Deploy the static website to gh-pages
         run: npm run deploy
