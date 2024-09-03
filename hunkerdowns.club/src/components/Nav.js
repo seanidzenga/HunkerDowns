@@ -1,54 +1,38 @@
-import React, { Component } from 'react';
+import { React, useState } from 'react';
 import '../App.css';
 import { NavLink } from 'react-router-dom';
-import {ReactComponent as Logo} from '../img/98738-ffffff.svg';
-import {ReactComponent as BurgerMenu} from '../img/menu_white_24dp.svg';
+import {ReactComponent as Logo} from '../img/logo.svg';
+import {ReactComponent as BurgerMenu} from '../img/burger-menu.svg';
 
-class Nav extends Component{
+const Nav = () => {
 
-    constructor(props){
+    const [burgerOpen, setBurgerOpen] = useState(false);
 
-        super(props);   
-        this.state = {
-            active: false,
-        };
-
-        this.toggleClass = this.toggleClass.bind(this);
-    }
-
-    render(){
-
-        return (
-            <nav>
-                <ul className='navigation'>
-                    <li>
-                        <BurgerMenu className='burger-menu' onClick={this.toggleClass} alt='' />
-                    </li>
-                    <li className={this.state.active ? 'active' : null}>
-                        <NavLink className="logo" exact to='/' activeClassName='selected' onClick={this.toggleClass}>
-                            <Logo className="logo" viewBox='0 0 1280 1280'/>
-                            <span className="logo">Home</span>
-                        </NavLink>
-                    </li>
-                    <li className={this.state.active ? 'active' : null}>
-                        <NavLink to ='/join' activeClassName='selected' onClick={this.toggleClass}>
-                            How to join
-                        </NavLink>
-                    </li>
-                    <li className={this.state.active ? 'active' : null}>
-                        <NavLink to='/subfrequencies' activeClassName='selected' onClick={this.toggleClass}>
-                            SubFrequencies
-                        </NavLink>
-                    </li>
-                </ul>        
-            </nav>
-        )
-    }
-
-    toggleClass(){
-        const currentState = this.state.active;
-        this.setState({active: !currentState });
-    }
+    return (
+        <nav>
+            <ul className='navigation'>
+                <li>
+                    <BurgerMenu className='burger-menu' alt='' onClick={() => setBurgerOpen(!burgerOpen)}/>
+                </li>
+                <li className={burgerOpen ? 'active' : ''}>
+                    <NavLink className="logo" to='/' onClick={() => setBurgerOpen(!burgerOpen)}>
+                        <Logo className="logo" viewBox='0 0 1280 1280'/>
+                        <span className="logo">Home</span>
+                    </NavLink>
+                </li>
+                <li className={burgerOpen ? 'active' : ''}>
+                    <NavLink to ='join' onClick={() => setBurgerOpen(!burgerOpen)}>
+                        How to join
+                    </NavLink>
+                </li>
+                <li className={burgerOpen ? 'active' : ''}>
+                    <NavLink to='subfrequencies' onClick={() => setBurgerOpen(!burgerOpen)}>
+                        SubFrequencies
+                    </NavLink>
+                </li>
+            </ul>        
+        </nav>
+    );
 }
 
 export default Nav;

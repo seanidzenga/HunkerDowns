@@ -1,14 +1,42 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './components/Home';
+import Join from './components/Join';
+import Root from './routes/root';
+import SubFrequencies from './components/SubFrequencies';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      },
+      {
+        path: "join",
+        element: <Join />
+      },
+      {
+        path: "subfrequencies",
+        element: <SubFrequencies />
+      }
+    ]
+  }
+]);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

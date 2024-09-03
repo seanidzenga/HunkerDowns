@@ -5,7 +5,7 @@ import Button from './Button';
 function Home() {
 
     return(
-        <div className='page'> 
+            <div className='page'> 
             <div className='bgvideo-container'>
                 <div className='bgvideo-cover'/>
                 <video autoPlay muted loop className='bgvideo'>
@@ -23,7 +23,7 @@ function Home() {
                         A VR night club built within an abandoned subway station - Hunker Downs is both literally and thematically underground.
                     </p>
                     <div className="button-container">
-                        <Button href='/join'>
+                        <Button href='#/join'>
                             Join
                         </Button>
                     </div>
