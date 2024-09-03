@@ -13,5 +13,8 @@ jobs:
         working-directory: ./hunkerdowns.club
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
       - name: Deploy the static website to gh-pages
         run: npm run deploy
