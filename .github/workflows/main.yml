@@ -18,15 +18,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: set git email
-        run: git config --global user.email "shodan@hunkerdowns.club"
-      - name: set git name
-        run: git config --global user.name "Shodan"
       - name: install node modules
         run: npm install --no-audit
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "Sean Idzenga <sean.idzenga@protonmail.com>"
+          npm run deploy -- -u "Shodan <shodan@hunkerdowns.club>"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
