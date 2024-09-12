@@ -145,6 +145,13 @@ ul {
   width: 60px
 }
 
+.hunker-downs-logo.big {
+  padding: 0;
+  fill: white;
+  height: 150px;
+  width: 150px;
+}
+
 .subfrequencies {
   position: relative
 }
