@@ -16,8 +16,8 @@ const Nav = () => {
                 </li>
                 <li className={burgerOpen ? 'active' : ''}>
                     <NavLink className="logo" to='/' onClick={() => setBurgerOpen(!burgerOpen)}>
-                        <Logo className="logo" viewBox='0 0 1280 1280'/>
-                        <span className="logo">Home</span>
+                        <Logo className="hunker-downs-logo" viewBox='0 0 250 250'/>
+                        <span className="home-button">Home</span>
                     </NavLink>
                 </li>
                 <li className={burgerOpen ? 'active' : ''}>
