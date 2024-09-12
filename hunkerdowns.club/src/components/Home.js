@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import Button from './Button';
+import {ReactComponent as Logo} from '../img/logo.svg';
 
 function Home() {
 
@@ -16,9 +17,9 @@ function Home() {
             <div className='cover'>
                 <div>
                     <h1>Hunker Downs</h1>
-
                     <p className='welcome'>metaversally underground</p>
-                    <div className='spacer'/>
+                    <Logo className="hunker-downs-logo big" viewBox='0 0 250 250'/>
+                    {/* <div className='spacer'/> */}
                     <p className='mono'>
                         A VR night club built within an abandoned subway station - Hunker Downs is both literally and thematically underground.
                     </p>

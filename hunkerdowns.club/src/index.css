@@ -138,9 +138,18 @@ ul {
   font-size: 20px
 }
 
-.logo {
-  height: 60px !important;
-  width: 60px !important
+.hunker-downs-logo {
+  padding: 5px;
+  fill: red;
+  height: 60px;
+  width: 60px
+}
+
+.hunker-downs-logo.big {
+  padding: 0;
+  fill: white;
+  height: 150px;
+  width: 150px;
 }
 
 .subfrequencies {
@@ -329,11 +338,11 @@ nav {
   z-index: 1
 }
 
-.navigation svg.logo {
+.navigation .hunker-downs-logo {
   display: inline-block
 }
 
-.navigation span.logo {
+.navigation .home-button {
   display: none
 }
 
@@ -380,11 +389,11 @@ nav {
     display: block
   }
 
-  .navigation svg.logo {
+  .navigation .hunker-downs-logo {
     display: none
   }
 
-  .navigation span.logo {
+  .navigation .home-button {
     display: inline-block
   }
 
