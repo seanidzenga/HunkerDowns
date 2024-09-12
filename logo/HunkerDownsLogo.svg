@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="HunkerDownsLogo3.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="323.5"
+     inkscape:cy="618.5"
+     inkscape:window-width="3840"
+     inkscape:window-height="2093"
+     inkscape:window-x="-9"
+     inkscape:window-y="247"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path2457"
+       style="fill:#ff0000;stroke-width:2.37788"
+       inkscape:transform-center-x="3.1917415e-06"
+       inkscape:transform-center-y="7.7888923"
+       d="M 322.64844 480.90625 L 313.69922 489.85547 L 313.69922 489.88086 L 322.67383 480.90625 L 322.64844 480.90625 z M 338.70898 480.90625 L 313.69922 505.91602 L 313.69922 839.96094 L 302.36133 839.96094 L 231.62109 839.96094 L 396.84961 1005.252 L 562.08008 839.96094 L 491.33789 839.96094 L 480 839.96094 L 480 505.91602 L 454.99023 480.90625 L 338.70898 480.90625 z "
+       transform="scale(0.26458333)" />
+    <path
+       id="rect1662"
+       style="fill:#800080;stroke-width:0.462187"
+       d="M 58.284248,19.237585 30.000187,47.521648 v 46.71601 h 16.757634 l 3.175515,3.175516 0.06666,-0.06666 v 3.765656 l -0.06666,-0.0667 -3.192052,3.19205 H 30.000187 v 9.99991 h 16.757634 l 3.175515,3.17552 0.06666,-0.0667 v 3.76566 l -0.06666,-0.0667 -3.19257,3.19257 H 30.000187 v 9.99991 h 16.811892 l 3.121257,3.12125 0.06666,-0.0667 v 3.76566 l -0.06666,-0.0667 -3.210657,3.21066 0.03566,0.0357 h -16.75815 v 46.71549 l 28.284061,28.28458 h 21.71547 v -86.62365 l 8.376232,-8.37624 h 33.247068 l 8.37675,8.37675 v 86.62314 h 21.71598 L 179.99981,190.9532 V 144.23771 H 163.175 l 0.0357,-0.0357 L 160,140.99139 v -3.63285 l 3.12074,-3.12074 h 16.87907 v -9.99991 H 163.19257 L 160,121.04532 v -3.63285 l 3.175,-3.175 h 16.82481 v -9.99991 H 163.19205 L 160,101.04551 v -3.632852 l 3.175,-3.175 h 16.82481 V 47.521648 L 151.71575,19.237585 h -21.71598 v 86.623655 l -8.37624,8.37623 H 88.376466 l -8.376748,-8.37675 V 19.237585 Z" />
+  </g>
+</svg>
