@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import Button from './Button';
 import {ReactComponent as Logo} from '../img/logo.svg';
+import bgvideo from '../vid/bgvideo-720p.mp4';
 
 function Home() {
 
@@ -10,7 +11,7 @@ function Home() {
             <div className='bgvideo-container'>
                 <div className='bgvideo-cover'/>
                 <video autoPlay muted loop className='bgvideo'>
-                    <source src='https://s3.ca-central-1.amazonaws.com/hunkerdowns.club/bgvideo-720p.mp4' type='video/mp4' />
+                    <source src={bgvideo} type='video/mp4' />
                 </video>
             </div>
             
