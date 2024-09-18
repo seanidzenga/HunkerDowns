@@ -1,0 +1,36 @@
+body {
+  background-color:#000;
+  color:red;
+  text-align:center;
+  font-family:"Orbitron",sans-serif
+}
+  
+.warning {
+  fill:red;
+  height:15em
+}
+  
+.heading {
+  font-optical-sizing:auto;
+  font-size:5em;
+  color:red;
+  margin:0
+}
+  
+.heading-container {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content:center;
+  justify-content:center;
+  align-items:center
+}
+  
+.container {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  align-content:center
+}
