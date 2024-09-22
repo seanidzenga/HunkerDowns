@@ -9,15 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="404.css">
+    <link rel="stylesheet" href="404.min.css">
   </head>
   <body>
-    <div class="container">
+    <div class="error-component">
       <div class="heading-container">
-        <svg class="warning"  viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"><path  d="M143.104 30.398 11.896 257.658l6.895 11.944h262.418l6.895-11.944-131.208-227.26Zm-6.932 50.893h27.656v131.368h-27.656zm0 142.344h27.656v27.656h-27.656z"/></svg>
-        <h1 class="heading">404</h1>
+        <div class="warning-symbol"></div>
+        <div>
+          <h1 class="error-status">404</h1>
+          <h2 class="error-status-text">Not Found</h2>
+        </div>
       </div>
-      <p class="go-back">Head back to <a href="https://hunkerdowns.club/">hunkerdowns.club</a></p>
+      <p class="error-data">Error: No route matches URL <span id="error-url"></span></p>
+      <p class="go-back">Go back to <a href="https://hunkerdowns.club/">hunkerdowns.club</a></p>
     </div>
   </body>
+  <script>
+    const url = window.location.href.replace(window.location.origin, "");
+    document.getElementById("error-url").innerHTML = `"${url}"`;
+  </script>
 </html>
