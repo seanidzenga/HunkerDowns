@@ -1,0 +1,80 @@
+.error-component {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  align-content:center;
+  text-align:center;
+}
+
+.error-component * {
+  color: #f00;
+  font-family:"Orbitron",sans-serif
+}
+
+.error-component a {
+  color: #00FFFF;
+}
+
+.error-component a:visited {
+  color: #00b2b2;
+}
+
+.error-component .error-status-text {
+  font-size: 2em;
+}
+
+.error-data, .go-back, .error-status, .error-status-text {
+  margin-top: 0;
+}
+
+.error-data {
+  font-size: 1.25em;
+  font-family: monospace;
+  max-height: 8em;
+  overflow-y: auto;
+}
+
+.go-back {
+  font-size: 1em;
+}
+
+.warning-symbol {
+  height: 15em;
+  width: 15em;
+  mask-image: url(../../../public/warning.svg);
+  mask-repeat: no-repeat;
+  background: linear-gradient(transparent, #f00, transparent);
+  background-size: auto 6px;
+  animation: scanlines 20s linear infinite;
+}
+
+.heading {
+  font-optical-sizing:auto;
+  font-size:5em;
+  margin:0
+}
+
+.heading-container {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content:center;
+  justify-content:center;
+  align-items:center
+}
+
+.error-status, .error-status-text {
+  margin-bottom: 0;
+}
+
+@keyframes scanlines {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 100%;
+  }
+}
