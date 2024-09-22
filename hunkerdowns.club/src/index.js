@@ -10,6 +10,7 @@ import Join from './components/Join';
 import Root from './routes/root';
 import SubFrequencies from './components/SubFrequencies';
 import reportWebVitals from './reportWebVitals';
+import Error from './components/Error';
 
 const router = createHashRouter([
   {
@@ -28,7 +29,8 @@ const router = createHashRouter([
         path: "subfrequencies",
         element: <SubFrequencies />
       }
-    ]
+    ],
+    errorElement: <Error/>
   }
 ]);
 
