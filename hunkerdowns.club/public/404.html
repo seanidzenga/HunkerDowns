@@ -20,8 +20,12 @@
           <h2 class="error-status-text">Not Found</h2>
         </div>
       </div>
-      <p class="error-data">Error: No route matches URL</p>
+      <p class="error-data">Error: No route matches URL <span id="error-url"></span></p>
       <p class="go-back">Go back to <a href="https://hunkerdowns.club/">hunkerdowns.club</a></p>
     </div>
   </body>
+  <script>
+    const url = window.location.href.replace(window.location.origin, "");
+    document.getElementById("error-url").innerHTML = `"${url}"`;
+  </script>
 </html>

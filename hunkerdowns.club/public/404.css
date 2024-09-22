@@ -84,6 +84,10 @@ p {
   overflow-y: auto;
 }
 
+#error-url {
+  font-family: monospace;
+}
+
 .go-back {
   font-size: 1em;
 }
