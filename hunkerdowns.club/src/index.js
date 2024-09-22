@@ -8,7 +8,7 @@ import {
 import Home from './components/Home';
 import Join from './components/Join';
 import Root from './routes/root';
-import SubFrequencies from './components/SubFrequencies';
+import SubFrequencies from './routes/subfrequencies';
 import reportWebVitals from './reportWebVitals';
 import Error from './components/Error';
 

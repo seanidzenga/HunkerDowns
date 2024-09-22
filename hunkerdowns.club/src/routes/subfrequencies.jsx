@@ -7,10 +7,10 @@ import section5 from '../img/section-5-background.png';
 import dreamcard from '../img/dreamcard.png';
 import synescapecard from '../img/synescapecard.png';
 import flaculacard from '../img/flaculacard.png';
-import Section from './Section';
-import Button from './Button';
+import Section from '../components/Section';
+import Button from '../components/Button';
 
-function SubFrequencies() {
+export default function SubFrequencies() {
 
     return(
         <div className="page">
@@ -187,7 +187,3 @@ function SubFrequencies() {
         </div>
     )
 }
-
-
-
-export default SubFrequencies;
