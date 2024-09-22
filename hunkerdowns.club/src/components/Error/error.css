@@ -47,7 +47,7 @@
 .warning-symbol {
   height: 15em;
   width: 15em;
-  mask-image: url(../../../public/warning.svg);
+  mask-image: url(../../img/warning.svg);
   mask-repeat: no-repeat;
   background: linear-gradient(transparent, #f00, transparent);
   background-size: auto 6px;

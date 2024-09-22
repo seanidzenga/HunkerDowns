@@ -5,27 +5,21 @@
     <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Page not found - Hunker Downs</title>
+    <title>Redirecting...</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="404.min.css">
+    <style>
+      body{background-color:#000;color:red;font-family:Orbitron,sans-serif}.wrapper{position:absolute;top:0;right:0;bottom:0;left:0;align-content:center;text-align:center}
+    </style>
   </head>
   <body>
-    <div class="error-component">
-      <div class="heading-container">
-        <div class="warning-symbol"></div>
-        <div>
-          <h1 class="error-status">404</h1>
-          <h2 class="error-status-text">Not Found</h2>
-        </div>
-      </div>
-      <p class="error-data">Error: No route matches URL <span id="error-url"></span></p>
-      <p class="go-back">Go back to <a href="https://hunkerdowns.club/">hunkerdowns.club</a></p>
+    <div class="wrapper">
+      <h1>Redirecting...</h1>
+      <p>If you are not redirected automatically, <a href="/">click here</a></p>
     </div>
   </body>
   <script>
-    const url = window.location.href.replace(window.location.origin, "");
-    document.getElementById("error-url").innerHTML = `"${url}"`;
+    window.location.assign(`${window.location.origin}/#${window.location.pathname}`);
   </script>
 </html>
