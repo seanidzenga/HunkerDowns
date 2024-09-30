@@ -4,11 +4,13 @@ import section1 from '../img/section-1-background.png';
 import section2 from '../img/section-2-background.png';
 import section3 from '../img/section-3-background.png';
 import section5 from '../img/section-5-background.png';
-import dreamcard from '../img/dreamcard.png';
-import synescapecard from '../img/synescapecard.png';
-import flaculacard from '../img/flaculacard.png';
 import Section from '../components/Section';
 import Button from '../components/Button';
+import HostCard from '../components/HostCard';
+import {Link} from "react-router-dom";
+import SynescapePortrait from '../img/portraits/synescape.jpg';
+import DreamstateSevenPortrait from '../img/portraits/dreamstate-seven.jpg';
+import CountFlaculaPortrait from '../img/portraits/count-flacula.jpg'
 
 export default function SubFrequencies() {
 
@@ -71,16 +73,34 @@ export default function SubFrequencies() {
                         Who we are
                     </strong>
                 </h2>
-                <div className="columns wide">
-                    <div className="column flex-base-33">
-                        <img src={flaculacard} alt='Count FLACula.'/>
-                    </div>
-                    <div className="column flex-base-33">
-                        <img src={dreamcard} alt='Dreamstate Seven'/>
-                    </div>
-                    <div className="column flex-base-33">
-                        <img src={synescapecard} alt='Synescape'/>
-                    </div>
+                <div className="columns card-section">
+                  <HostCard
+                    title="Count FLACula"
+                    portrait={CountFlaculaPortrait}
+                    highlight="#009927"
+                    type="lock"
+                    text1="When summoned drops the sickest cover tracks &nbsp; Immune to fire damage when dancing on ashes"
+                    text2="Casts network buffs for whole party"
+                    text3="Can portal to VR Realms on tap"
+                  />
+                  <HostCard
+                    title="Dreamstate Seven"
+                    portrait={DreamstateSevenPortrait}
+                    highlight="#0037ff"
+                    type="skull"
+                    text1="Buffs party morale with mad MC skills&nbsp;Bonus to awareness of freshest cuts and newest releases"
+                    text2="Mastercraft level in OBS and audio engineering"
+                    text3="May be an actual dragon"
+                  />
+                  <HostCard
+                    title="Synescape"
+                    portrait={SynescapePortrait}
+                    highlight="#4f0056"
+                    type="bug"
+                    text1="Bonus to obscure and bizarre noise track drop rate AOE bass effect can stun enemies for two rounds"
+                    text2="Expert shitposter boosts dankness of all memes"
+                    text3="Crafts runes on armour and crafts party gear"
+                  />
                 </div>
             </Section>
 
@@ -112,9 +132,9 @@ export default function SubFrequencies() {
                             <p>You can also join the madness in our VRChat club.</p>
                             <p>HUNKERDOWNS is now a public venue and will be broadcast to directly during live shows.</p>
                             <cite>
-                                <a href='https://vrchat.com/home/world/wrld_0c4485c2-660b-4bca-b629-813b483ec11b' target='_blank' rel='noreferrer'>
-                                    Here's how
-                                </a>
+                                <Link to='/join'>
+                                  Here's how
+                                </Link>
                             </cite>
                         </blockquote>
                     </div>
