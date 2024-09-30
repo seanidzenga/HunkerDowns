@@ -240,6 +240,10 @@ ul {
   max-width: 100%
 }
 
+.card-section {
+  max-width: min-content;
+}
+
 .margin-bottom-half {
   margin-bottom: 16px
 }
@@ -344,6 +348,12 @@ nav {
 
 .navigation .home-button {
   display: none
+}
+
+@media (max-width: 1350px){
+  .card-section {
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width:768px) {
