@@ -17,7 +17,9 @@ function HostCard() {
       <div className="title">
         <div className="doodad left"></div>
         {title}
-        <div className="doodad right"></div>
+        <div className="doodad right">
+          <div className="type-icon bug"/>
+        </div>
       </div>
       <div className="portrait" style={{backgroundImage: `url(${mainImage})`}}/>
       <div className="description-container">
