@@ -1,0 +1,170 @@
+:root {
+  --title-doodad-offset: -20px;
+  --grey: #757575;
+  --highlight: #4f0056;
+  --doodad-height: 40px;
+  --doodad-border: var(--grey) 2px solid;
+}
+
+.host-card-component {
+  align-items: center;
+  background-color: #000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  min-height: 560px;
+  padding: 15px;
+  min-width: 400px;
+}
+
+.host-card-component .title {
+  --border-radius-horizontal: 10%;
+  --border-radius-vertical: 80px;
+  align-items: center;
+  background-color: #000;
+  border: var(--highlight) 5px solid;
+  border-radius: var(--border-radius-horizontal) / var(--border-radius-vertical);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 100%;
+  height: 60px;
+  justify-content: center;
+  padding: 0 60px 0 42px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 95%;
+}
+
+.doodad {
+  --border-radius-horizontal: 45%;
+  --border-radius-vertical: 80px;
+  background-color: #000;
+  border: var(--doodad-border);
+  border-radius: var(--border-radius-horizontal) / var(--border-radius-vertical);
+  
+  height: var(--doodad-height);
+  position: absolute;
+  width: 60px;
+}
+
+.doodad.left {
+  left: var(--title-doodad-offset);
+}
+
+.doodad.right {
+  right: var(--title-doodad-offset);
+}
+
+.doodad.small {
+  height: 15px;
+  width: 20px;
+}
+
+.doodad.small.right {
+  bottom: 50%;
+  margin-bottom: auto;
+  margin-top: auto;
+  right: -10px;
+  top: 50%;
+}
+
+.portrait {
+  background-color: var(--highlight);
+  background-size: cover;
+  border: var(--highlight) 4px solid;
+  height: 60%;
+  margin-top: -14px;
+  width: 95%;
+}
+
+.description-background::after {
+  --size: 15px;
+  background-color: var(--highlight);
+  border-radius: 100%;
+  bottom: 15px;
+  content: '';
+  height: var(--size);
+  position: absolute;
+  right: -2px;
+  width: var(--size);
+}
+
+.description-row {
+  color: #fff;
+  font-size: 0.8em;
+  line-height: 20px;
+  margin-right: -32px;
+  z-index: 1;
+}
+
+.description-container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  height: 35%;
+  margin-top: -25px;
+  padding: 12px 0 12px 0;
+  row-gap: 5px;
+  position: relative;
+  width: 95%;
+}
+
+.description-container .doodad {
+  position: relative;
+}
+
+.description-container .doodad.small {
+  position: absolute;
+}
+
+.description-background {
+  --border-radius-horizontal: 8%;
+  --border-radius-vertical: 50%;
+  background-color: #000;
+  border: var(--highlight) 5px solid;
+  border-radius: var(--border-radius-horizontal) / var(--border-radius-vertical);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.description-container .doodad.left {
+  z-index: 2;
+}
+
+.description-container .doodad.right {
+  z-index: 0;
+}
+
+.type-icon {
+  border-radius: 100%;
+  border: var(--doodad-border);
+  aspect-ratio: 1/1;
+  height: var(--doodad-height);
+  position: absolute;
+  left: calc((var(--doodad-height) / 2) * -1);
+  top: -2px;
+  background-color: #000;
+  background-image: url('../../img/card-type-spritesheet.png');
+  background-size: 34px;
+  background-repeat: no-repeat;
+  background-position-x: 1px;
+}
+
+.type-icon.bug {
+  background-position-y: 1px;
+}
+
+.type-icon.skull {
+  background-position-y: -33px;
+}
+
+.type-icon.lock {
+  background-position-y: -67px;
+}
