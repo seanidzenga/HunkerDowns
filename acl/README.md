@@ -1,0 +1,1 @@
+Currently just a manually updated list, with aspirations of becoming a full VRChat package.
